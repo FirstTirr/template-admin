@@ -5,6 +5,7 @@ import Home from "./components/ui/home";
 import NewsTable from "./components/ui/NewsTable";
 import PrestasiTable from "./components/ui/prestasiTable";
 import Jurusan from "./components/ui/jurusan";
+import Agenda from "./components/ui/agenda";
 import React, { useState } from "react";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         {page === "news" && <NewsTable />}
         {page === "prestasi" && <PrestasiTable />}
         {page === "jurusan" && <Jurusan />}
+        {page === "agenda" && <Agenda />}
       </div>
     </div>
   );

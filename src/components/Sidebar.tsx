@@ -152,7 +152,14 @@ const Sidebar = ({ onNavigate, page }: SidebarProps & { page?: string }) => {
           >
             Program Keahlian
           </SidebarItem>
-          <SidebarItem icon={<Calendar size={20} />} active={page === "agenda"}>
+          <SidebarItem
+            icon={<Calendar size={20} />}
+            active={page === "agenda"}
+            onClick={() => {
+              onNavigate && onNavigate("agenda");
+              setMobileSidebar(false);
+            }}
+          >
             Agenda
           </SidebarItem>
         </SidebarSection>
